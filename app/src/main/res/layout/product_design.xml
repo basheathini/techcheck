@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_marginBottom="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:id="@+id/checker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:cardCornerRadius="3dp"
+        app:cardMaxElevation="20dp"
+        app:cardElevation="10dp">
+        <android.support.v7.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="40dp"
+            android:layout_margin="12dp"
+            app:cardBackgroundColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="110dp"
+            android:layout_marginStart="110dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:layout_marginTop="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="110dp"
+            android:layout_marginStart="110dp"
+            android:layout_gravity="center_vertical"/>
+
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:layout_gravity="end"
+            android:background="@drawable/ic_close_black_24dp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:layout_marginTop="18dp"
+            android:textStyle="bold"
+            android:layout_gravity="end|center_vertical"
+            android:textColor="@color/black"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:textSize="9sp"
+            android:visibility="gone"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="90dp"
+            android:layout_marginStart="90dp"/>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
